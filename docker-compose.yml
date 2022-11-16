@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:12
+    ports:
+      - 5050:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: nestjs-jwt
