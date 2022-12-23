@@ -28,7 +28,6 @@ export class AuthController {
   @Post('/local/sign-in')
   @HttpCode(HttpStatus.ACCEPTED)
   signIn(@Body() dto: authDto): Promise<token> {
-    console.log('I get This');
     return this.authService.signIn(dto);
   }
   // local/logout
